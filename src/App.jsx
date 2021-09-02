@@ -1,6 +1,6 @@
 import React from 'react';
 import Tetris from './components/Tetris';
-// Test 6
+// Test 7
 const App = () => {
   return (
     <div className="App">
