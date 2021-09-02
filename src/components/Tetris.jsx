@@ -11,6 +11,8 @@ import { useStage } from '../hooks/useStage';
 import { usePlayer } from '../hooks/usePlayer';
 import { useInterval } from '../hooks/useInterval';
 import { useGameStatus } from '../hooks/useGameStatus';
+import Music from './Music';
+import { AudioPlayerProvider } from 'react-use-audio-player';
 
 const Tetris = () => {
   const [dropTime, setDropTime] = useState(null);
@@ -113,6 +115,9 @@ const Tetris = () => {
               <Display text={`Score: ${score}`} />
               <Display text={`Rows: ${rows}`} />
               <Display text={`Level: ${level}`} />
+              <AudioPlayerProvider>
+                <Music file="../../public/te-voy-a-dar.mp3" />
+              </AudioPlayerProvider>
             </div>
           )}
 
