@@ -1,7 +1,7 @@
 version: "3"
 services:
-  react-tetris:
-    image: pablorbombieri/react-tetris
+  tetris:
+    image: pablorodriguez88/tetris
     restart: unless-stopped
     build: .
     ports:
