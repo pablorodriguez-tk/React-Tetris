@@ -1,0 +1,8 @@
+version: "3"
+services:
+  react-tetris:
+    image: pablorodriguez88/react-tetris:1.0.1
+    container_name: react-tetris
+    restart: unless-stopped
+    ports:
+      - "8081:80"

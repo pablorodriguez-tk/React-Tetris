@@ -1,3 +1,6 @@
 .dockerignore
 node_modules
 build
+docker-compose.yml
+Dockerfile
+README.md

@@ -1,8 +1,10 @@
 version: "3"
 services:
   tetris:
-    image: pablorodriguez88/tetris
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react-tetris
     restart: unless-stopped
-    build: .
     ports:
-      - "8081:3000"
+      - "8081:80"
